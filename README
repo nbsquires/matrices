@@ -1,0 +1,33 @@
+AUTHOR: Natasha Squires
+
+This project was tested on Ubuntu 12.04
+
+FILE MANITEST:
+
+*C files:
+  - readMatrices.c - A program that reads matrix data from user input and
+      sends it to shared memory.
+  - multiplyMatrices.c - A program that reads data from shared memory and 
+      uses it to produce a product matrix using multithreading. It sends 
+      the results to shared memory.
+  - displayProduct.c - A program that reads from shared memory to display
+      the product matrix results.
+
+*Other files:
+  - keyFile - Just a file for the ftok function call.
+
+HOW TO COMPILE AND RUN:
+To compile readMatrices.c: gcc readMatrices.c -o readMatrices
+To compile multiplyMatrices.c: gcc -pthread multiplyMatrice.c -o multiplyMatrices.c
+To compile displayProduct: gcc displayProduct.c -o displayProduct
+
+However, the folder contains the compiled binary already, so this step
+may not be necessary.
+
+In order to run, you must run readMatrices first: $ ./readMatrices
+Follow the program's instructions for user input.
+Then: $ ./multiplyMatrices (to run the multiplier)
+Finally: $ ./displayProduct (to view the results)
+
+ISSUES?
+No known issues.
