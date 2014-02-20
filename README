@@ -4,7 +4,7 @@ This project was tested on Ubuntu 12.04
 
 FILE MANITEST:
 
-*C files:
+* C files:
   - readMatrices.c - A program that reads matrix data from user input and
       sends it to shared memory.
   - multiplyMatrices.c - A program that reads data from shared memory and 
@@ -13,7 +13,7 @@ FILE MANITEST:
   - displayProduct.c - A program that reads from shared memory to display
       the product matrix results.
 
-*Other files:
+* Other files:
   - keyFile - Just a file for the ftok function call.
 
 HOW TO COMPILE AND RUN:
